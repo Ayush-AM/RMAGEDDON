@@ -1,0 +1,27 @@
+.loadercontainer {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: first baseline;
+    background-color: #000; 
+    transition: height 1s ease-in-out; 
+}
+
+
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 1s ease-in-out; 
+    height: 34%;
+    margin-top: 20vh;
+}
+
+
+
+.loader img {
+    width: auto;
+    height: 100%;
+    transition: height 1s ease-in-out; /* Smooth shrinking for the image */
+}

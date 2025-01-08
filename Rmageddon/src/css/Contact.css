@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400;500&display=swap");
+
+@font-face {
+  font-family: myFirstFont;
+  src: url("../font/Faster Stroker.otf");
+}
+
+.contactNavbar {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  align-items: center; 
+  padding: 10px 20px; 
+  background-color: #222831;
+}
+
+
+
+.contactNavbar a:hover {
+  color: #ffd700; /* Color change on hover */
+}
+
+
+.contact-title {
+  font-family: myFirstFont;
+  text-align: center;
+  font-size: 2.8em;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  color: #ffd700  ;
+  z-index: 0;
+}
+
+.box1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* Ensure the box1 takes at least the full viewport height */
+  margin-bottom: 50px; /* Add some space between the last card and the footer */
+  z-index: 0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 150px;
+  justify-items: center;
+  align-items: center;
+  background-color: #000000;
+  font-family: 'Baloo Paaji 2', cursive;
+  padding: 50px 0;
+  z-index: 0;
+}
+
+@keyframes flameUp {
+  0% {
+    box-shadow: 0 0 15px rgba(191, 130, 16, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(255, 215, 0, 0.6);
+  }
+  100% {
+    box-shadow: 0 0 15px rgba(255, 215, 0, 1);
+  }
+}
+
+.Cont_Card {
+  background-color: #222831;
+  height: 26rem;
+  width: 24rem;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 22px;
+  transition: transform 0.3s ease-in-out;
+  z-index: 0;
+}
+
+.Cont_Card:hover {
+  scale: 1.03;
+  transition: 1s;
+  animation: flameUp 1s infinite ease-out; 
+  transition: transform 10.3s ease-in-out; /* Smooth transition for scaling */
+}
+
+
+.Cont_Card__name {
+  margin-top: 10px;
+  font-size: 1.8em;
+  margin-bottom: 5px;
+  color: #ffd700;
+}
+
+.Cont_Card__image {
+  height: 160px;
+  width: 160px;
+  border-radius: 50%;
+  border: 2px solid #272133;
+  margin-top: 10px;
+  box-shadow: 0 2px 25px #ffd700;
+  background-size: cover; /* Ensures the image covers the circle fully */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+}
+
+p {
+  font-size: 1.3em;
+  margin-top: 5px;
+}
+
+
+.social-icons {
+  padding: 0;
+  list-style: none;
+  margin: 1em 0;
+}
+
+.social-icons li {
+  display: inline-block;
+  position: relative;
+  font-size: 1.2em;
+  margin-right: 15px;
+}
+
+.social-icons li:last-child {
+  margin-right: 0;
+}
+
+.social-icons a {
+  display: inline-block;
+}
+
+.social-icons a:before {
+  content: " ";
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  display: block;
+  background: linear-gradient(45deg, #ffd90086, #f7bc0c65);
+  transition: all 265ms ease-out;
+}
+
+.social-icons a:hover:before {
+  transform: scale(0);
+  transition: all 265ms ease-in;
+}
+
+.social-icons a:hover i {
+  transform: scale(2.2);
+  color: #ffd700;
+  background: -webkit-linear-gradient(45deg, #ffd700, #f7bc0c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 265ms ease-in;
+}
+
+.social-icons i {
+  color: #fff;
+  position: absolute;
+  top: 0.45em;
+  left: 0.48em;
+  transition: all 265ms ease-out;
+}
+
+.container > .Cont_Card:last-child {
+  grid-column: span 2;
+  justify-self: center;
+}
+@media (max-width:900px) {
+  
+  .contactNavbar{
+  justify-content: space-between;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+    justify-items: center;
+  }
+
+  .Cont_Card {
+    height: 18rem;
+    width: 15rem;
+    padding: 15px;
+  }
+
+  .Cont_Card__name {
+    font-size: 1.1em;
+  }
+
+  .Cont_Card__image {
+    height: 100px;
+    width: 100px;
+  }
+
+  .social-icons li {
+    font-size: 1.3em;
+  }
+
+  .social-icons i {
+    color: #fff;
+    position: absolute;
+    top: 0.35em;
+    left: 0.40em;
+    transition: all 265ms ease-out;
+  }
+
+  p {
+    font-size: 0.9em;
+  }
+
+  .container > .Cont_Card:last-child {
+    grid-column: span 1;
+    width: 15rem;
+    height: 18rem;
+    justify-self: center;
+  }
+
+  /* .container .Cont_Card:last-child .Cont_Card__image {
+    height: 200px;
+    width: 100px;
+  } */
+  
+}

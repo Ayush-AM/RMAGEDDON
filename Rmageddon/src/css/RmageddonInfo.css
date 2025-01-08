@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+  font-family: myFirstFont;
+  src: url("../font/Faster Stroke.otf");
+}
+
+.rmageddonTitle {
+  color: #FFD700;
+  font-size: 4.5vw;
+  height: 12%;
+  font-family: myFirstFont;
+
+}
+
+
+.rmageddonLogo {
+  width: 100%;
+  /* height: 65%; */
+  height: 65%;
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+
+
+}
+
+.rmageddonLogo img {
+  width: auto;
+  height: 100%;
+}
+.rmageddonLogo video {
+  width: 19.5%;
+  height: 99%;
+}
+.rmageddonText {
+  width: 60%;
+  height: 22%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+  font-family: "Poppins";
+  
+}
+.rmageddonTextTitle {
+  font-size: 1.9vw;
+  display: flex;
+  justify-content: center;
+  padding-top: 5rem;;
+  font-weight: 600;
+
+  background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,215,0,1) 25%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.rmageddonTextInfo {
+  width: 68%;
+  font-size: 1.07vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 5px;
+  
+}
+@media (max-width: 480px) {
+  .rmageddonTitle {
+    font-size: 8vw;
+    width: 90%;
+    height: 1%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: last baseline;
+
+  }
+  .rmageddonLogo {
+    width: 100%;
+    height: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: first baseline;
+  }
+  .rmageddonLogo img {
+    width: auto;
+    height: 98%;
+  }
+  .rmageddonLogo video{
+    width: auto;
+    height: 98%;
+  }
+ 
+  .rmageddonText {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+  }
+  .rmageddonTextTitle {
+    font-size: 4vw;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .rmageddonTextInfo {
+    margin-top: 3px;
+    font-size: 2.6vw;
+    width: 83%;
+    margin-bottom: 12%;
+  }
+}
+
+
+
+@media (min-width: 481px) and (max-width: 600px) {
+  .rmageddonTitle {
+    width: 80%;
+    font-size: 7.4vw;
+    height: 9%;
+    display: flex;
+    justify-content: center;
+    align-items: last baseline;
+    text-align: center;
+  }
+  .rmageddonLogo {
+    width: 100%;
+    height: 50%;
+  }
+  .rmageddonLogo img {
+    /* width: 50%; */
+    height: 100%;
+  }
+  .rmageddonText {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4vw;
+  }
+  .rmageddonTextTitle {
+    font-size: 3.5vw;
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 2%;
+  }
+  .rmageddonTextInfo {
+    width: 80%;
+    height: 70%;
+    font-size: 2vw;
+    display: flex;
+    justify-self: center;
+    align-items: first baseline;
+    margin-bottom: 12%;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 780px) {
+  .rmageddonTitle {
+    font-size: 6vw;
+    width: 80%;
+    height: 10%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+  }
+  .rmageddonLogo {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: first baseline;
+  }
+  .rmageddonLogo img {
+    /* width: 45%; */
+    height: 90%;
+  }
+  .rmageddonText {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5vw;
+  }
+  .rmageddonTextTitle {
+    font-size: 2.8vw;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .rmageddonTextInfo {
+    font-size: 1.6vw;
+    width: 70%;
+    margin-bottom: 13%;
+  }
+}
+
+@media (min-width: 781px) and (max-width: 900px) {
+  .rmageddonTitle {
+    font-size: 7vw;
+    width: 90%;
+    height: 10%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+  }
+  .rmageddonLogo {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: first baseline;
+  }
+  .rmageddonLogo img {
+    /* width: 40%; */
+    height: 85%;
+  }
+  .rmageddonText {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .rmageddonTextTitle {
+    font-size: 2.7vw;
+    text-align: center;
+    width: 100%;
+    /* height: 6%; */
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+  }
+  .rmageddonTextInfo {
+    font-size: 1.3vw;
+    width: 70%;
+    margin-bottom: 15%;
+  }
+}
+@media (min-width: 901px) and (orientation: portrait) {
+  .rmageddonTitle {
+    font-size: 9vw;
+    height: 10%;
+  }
+  .rmageddonLogo {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .rmageddonLogo img {
+    /* width: 50%; */
+    height: 100%;
+  }
+  .rmageddonText {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 1vw;
+  }
+  .rmageddonTextTitle {
+    font-size: 4vw;
+    width: 100%;
+    text-align: center;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: last baseline;
+  }
+  .rmageddonTextInfo {
+    width: 85%;
+    height: 70%;
+    font-size: 2.5vw;
+    display: flex;
+    justify-content: start;
+  }
+}

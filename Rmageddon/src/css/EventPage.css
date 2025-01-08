@@ -1,0 +1,636 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+@font-face {
+  font-family: myFirstFont;
+  src: url("../font/Faster Stroker.otf");
+}
+
+.eventPageNavBar {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #222831;
+}
+
+.event_page_title{
+
+  color: #ffd700;
+  text-align: center;
+  font-size: 3.5vw;
+  font-family: myFirstFont;
+  letter-spacing: 5px;
+
+}
+
+.eventPageNavBar a:hover {
+  color: #ffd700;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+.event_page {
+  width: 100vw;
+  height: 190vh;
+  /* background-color: aqua; */
+}
+
+.page1 {
+  width: 100%;
+  height: 100vh;
+  background-image: url("https://res.cloudinary.com/dupeml4xm/image/upload/v1736306259/event_group_utg7y9.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.page2 {
+  width: 100%;
+  height: 100vh;
+  background-image: url("https://res.cloudinary.com/dupeml4xm/image/upload/v1736306327/event_page2_m1k0lb.png");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.roboWarCards {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-2 {
+  /* position: relative; */
+  background-color: white;
+  color: white;
+  background: url("https://res.cloudinary.com/dupeml4xm/image/upload/v1736306385/events_card_dsmfkb.png") no-repeat center center/cover;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  z-index: 2;
+}
+.card {
+  width: 55%;
+  height: 40%;
+  background-image: url("https://res.cloudinary.com/dupeml4xm/image/upload/v1736306385/events_card_dsmfkb.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.card-content {
+  width: 90%;
+  height: 80%;
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.card-content-2 {
+  position: relative;
+  z-index: 1;
+  color: white;
+  text-align: center;
+}
+
+.card-content h2 {
+  font-size: 2vw;
+  color: #ffd700;
+}
+.card-content-2 h2 {
+  font-size: 2vw;
+  color: #ffd700;
+}
+
+.card-content p {
+  width: 90%;
+  display: flex;
+
+  color: white;
+  font-size: 1vw;
+}
+.card-content-2 p {
+  font-size: 1vw;
+  margin-left: 4%;
+  width: 90%;
+  text-align: center;
+}
+
+.card-buttons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 1.5rem;
+}
+
+.card-buttons .btn {
+  background-color: #fff;
+  color: black;
+  border: none;
+  font-size: 1.2vw;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  padding: 1vh;
+  border-radius: 5px;
+}
+.card-buttons-2 {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  align-items: center;
+  margin-top: 1rem;
+}
+.card-buttons-2 .btn-2 {
+  background-color: #fff;
+  color: black;
+  border: none;
+  font-size: 0.9vw;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  border-radius: 5px;
+  padding: 0.4vw;
+}
+
+.card-buttons .btn:hover,
+.card-buttons-2 .btn-2:hover {
+  transform: scale(1.1);
+}
+
+.overlay-image {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: last baseline;
+  justify-content: center;
+  /* background-color: #222831; */
+  /* overflow: hidden; */
+  position: relative;
+  z-index: 0;
+}
+
+.overlay-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.overlay-event-image {
+  width: 10%;
+  height: 10%;
+  /* background-color: red; */
+  transition: all 0.5s ease;
+}
+
+.overlay-event-image:hover {
+  transform: translateY(20%);
+  opacity: 0;
+}
+
+.overlay-image-transformer:hover {
+  transform: scale(1.1);
+  z-index: 3;
+}
+
+.overlay-image:hover .overlay-event-image {
+  transform: scale(1.1);
+}
+
+.overlay-image-transformer {
+  transition: transform 1s ease, opacity 1s ease;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.overlay-image:hover .overlay-image-transformer {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.overlay-image:hover .overlay-event-image {
+  transform: scale(1.1);
+}
+
+.overlay-image img:first-child {
+  position: absolute;
+  z-index: 1;
+  width: 40%;
+  height: auto;
+}
+
+/* Second image styles */
+.overlay-image img:last-child {
+  position: absolute;
+  z-index: 2;
+  width: 50%;
+  height: auto;
+}
+
+.overlay-event-image-2 {
+  object-fit: contain;
+  width: 90%;
+  height: auto;
+}
+
+/* Parent container for the second set of images */
+.overlay-image-2 {
+  position: relative;
+  width: 90%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: last baseline;
+  margin: 0 auto;
+}
+
+/* First image of the second set */
+.overlay-image-2 img:first-child {
+  position: absolute;
+
+  z-index: 1;
+  width: 100%;
+  height: auto;
+}
+
+.overlay-image-2 img:last-child {
+  position: absolute;
+
+  z-index: 2;
+  width: 100%;
+  height: auto;
+}
+
+.overlay-event-image-2:hover {
+  transform: translateY(20px); /* Moves the image down */
+  opacity: 0; /* Fades the image out */
+}
+
+.overlay-image-transformer:hover {
+  transform: scale(1.1);
+  z-index: 3;
+}
+
+.overlay-image-2:hover .overlay-image-transformer,
+.overlay-image-2:hover .overlay-event-image-2 {
+  transform: scale(1.1); /* Scale up both images */
+}
+
+.overlay-image-transformer {
+  transition: transform 1s ease, opacity 1s ease;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.overlay-image-2:hover .overlay-image-transformer {
+  transform: translateY(0); /* Move it back to its normal position on hover */
+  opacity: 1; /* Fade it in */
+}
+
+.overlay-image-2:hover .overlay-event-image-2 {
+  transform: scale(1.1); /* Scale up the event image */
+}
+
+.cards-container-2 {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card-wrapper {
+  /* position: relative; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 20%;
+  height: 90%;
+  box-sizing: border-box;
+  z-index: 0;
+}
+
+.page2 {
+  overflow: hidden;
+}
+@media (max-width: 900px) {
+  .page1{
+    background-size: auto 100%;
+    background-position: center;
+  }
+  .page2 {
+    height: 300vh; 
+  }
+  .event_page{
+    height: 410vh;
+  }
+  .cards-container-2 {
+    height: 100%; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: space-between;
+  }
+ .card-wrapper{
+  width: 90%;
+  height: 24%;
+ }
+ .eventPageNavBar{
+  justify-content: space-between;
+ }
+ 
+}
+
+
+@media (min-width: 701px) and (max-width: 900px) {
+  .event_page_title{
+    font-size: 7vw;
+  }
+  .page2{
+    background-image: none;
+  }
+
+  .roboWarCards {
+    width: 70%;
+  }
+  .card {
+    width: 50%;
+  }
+  .card-content h2 {
+    font-size: 4vw;
+  }
+  .card-content p {
+    width: 85%;
+    display: flex;
+    color: white;
+    font-size: 1.8vw;
+  }
+  .card-buttons .btn {
+    font-size: 1.5vw;
+  }
+  .overlay-image-2{
+    width: 35%
+  }
+  .card-2{
+    width: 40%;
+    justify-content: space-around;
+
+  }
+  .card-2 h2{
+    font-size: 4vw;
+  }
+  .card-2 p{
+    font-size: 1.5vw;
+  }
+  .card-buttons-2 .btn-2{
+    font-size: 1.5vw;
+    padding: 1vw;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 700px) {
+  .event_page_title{
+    font-size: 8vw;
+  }
+  .roboWarCards {
+    width: 75%;
+  }
+  .card {
+    width: 60%;
+  }
+  .card-content h2 {
+    font-size: 4vw;
+  }
+  .card-content p {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    color: white;
+    font-size: 2vw;
+    text-align: center;
+  }
+  .card-buttons .btn {
+    font-size: 1.9vw;
+  }
+  .overlay-image-2{
+    width: 40%
+  }
+  .card-2{
+    width: 45%;
+    justify-content: space-around;
+  }
+  .card-2 h2{
+    font-size: 4vw;
+  }
+  .card-2 p{
+    font-size: 1.9vw;
+  }
+  .card-buttons-2 .btn-2{
+    font-size: 1.8vw;
+    padding: 1vw;
+  }
+  
+}
+
+@media (min-width: 481px) and (max-width: 600px) {
+  .event_page_title{
+    font-size: 10vw;
+  }
+  .roboWarCards {
+    width: 80%;
+  }
+
+  .page2{
+        background-image: none;
+  }
+
+  .card {
+    width: 80%;
+  }
+  .overlay-image {
+    width: 100%;
+    z-index: 0;
+  }
+  .overlay-image img:first-child {
+    /* position: absolute; */
+    z-index: 0;
+    width: 50%;
+    height: auto;
+  }
+  .overlay-image img:last-child {
+    /* position: absolute; */
+    z-index: 0;
+    width: 70%;
+    height: auto;
+  }
+
+  .card-content h2 {
+    font-size: 5vw;
+  }
+  .card-content p {
+    width: 90%;
+    display: flex;
+    color: white;
+    font-size: 2.5vw;
+  }
+  .card-buttons .btn {
+    font-size: 3vw;
+  }
+  .overlay-image-2{
+    width: 55%
+  }
+  .card-2{
+    width: 60%;
+    justify-content: space-around;
+  }
+  .card-2 h2{
+    font-size: 5vw;
+  }
+  .card-2 p{
+    font-size: 2vw;
+  }
+  .card-buttons-2 .btn-2{
+    font-size: 2vw;
+    padding: 1.3vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .event_page_title{
+    font-size: 10vw;
+  }
+  .roboWarCards {
+    width: 90%;
+  }
+  .page2{ 
+    background-image: none;
+
+  }
+  .card {
+    width: 90%;
+  }
+  .overlay-image {
+    width: 100%;
+    /* pointer-events: none; */
+    z-index: 0;
+    /* height: 100%; */
+    /* background-color: red; */
+  }
+  .overlay-image img:first-child {
+    position: absolute;
+    z-index: 1;
+    width: 60%;
+    height: auto;
+  }
+  .overlay-image img:last-child {
+    position: absolute;
+    z-index: 1;
+    width: 80%;
+    height: auto;
+  }
+  .card-content h2 {
+    font-size: 8vw;
+    height: fit-content;
+  }
+  .card-content p {
+    width: 90%;
+    display: flex;
+    color: white;
+    font-size: 3vw;
+  }
+  .card-buttons .btn {
+    font-size: 4vw;
+  }
+  .overlay-image-2{
+    width: 80%
+  }
+  .card-2{
+    width: 80%;
+    justify-content: space-around;
+  }
+  .card-2 h2{
+    font-size: 6.5vw;
+  }
+  .card-2 p{
+    font-size: 3vw;
+  }
+  .card-buttons-2 .btn-2{
+    font-size: 4.5vw;
+    padding: 2vw;
+  }
+}
+@media (min-width:900px) and (orientation:portrait) {
+  .page1{
+    background-size: auto 100%;
+    background-position: center;
+  }
+ 
+  .roboWarCards {
+    width: 70%;
+  }
+  .card {
+    width: 60%;
+  }
+  .card-content h2 {
+    font-size: 4vw;
+  }
+  .card-content p {
+    width: 85%;
+    display: flex;
+    color: white;
+    font-size: 1.8vw;
+  }
+  .card-buttons .btn {
+    font-size: 2vw;
+  }
+  .overlay-event-image-2{
+    flex-wrap: wrap;
+  }
+  .cards-container-2{
+    width: 100%;
+    height: 100%;
+  }
+  .card-wrapper{
+    width: 50%;
+    height: 40%;
+    justify-content: space-around;
+  }
+  .overlay-image-2{
+    width: 70%
+  }
+  .card-2{
+    width: 80%;
+    height: 60%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .card-2 h2{
+    font-size: 4vw;
+  }
+  .card-2 p{
+    font-size: 1.5vw;
+  }
+  .card-buttons-2 .btn-2{
+    font-size: 2vw;
+    padding: 2vw;
+  }
+}
