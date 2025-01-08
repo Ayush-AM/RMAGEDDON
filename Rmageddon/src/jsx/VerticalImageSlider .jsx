@@ -8,13 +8,13 @@ import { Autoplay, Pagination } from "swiper/modules";
 import slide1 from "../images/bhai1.jpg";
 import slide2 from "../images/bhai2.jpg";
 import slide3 from "../images/bhai3.jpg";
-import slide4 from "../images/Glimpses4.JPG";
+// import slide4 from "../images/Glimpses4.JPG";
 import slide5 from "../images/Glimpses5.JPG";
 
 import "../css/VerticalImageSlider.css";
 
 const VerticalImageSlider = ({ className }) => {
-  const images = [slide1, slide2, slide3, slide4, slide5];
+  const images = [slide1, slide2, slide3, slide5];
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
