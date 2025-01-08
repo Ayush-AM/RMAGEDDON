@@ -185,6 +185,7 @@
     padding: 0 2vw;
     background-image: url("../images/Glimpses_res.png");
     background-repeat: no-repeat;
+    background-size: cover;
   }
   .whichContainGlimpsesewithtext {
     flex-direction: column;
