@@ -39,7 +39,7 @@ const RmageddonUnlock = ({ className }) => {
             <div className="unlockTextContentButtons">
               <div className="cashPrize" data-aos="zoom-in">
                 <div className="cashPrizeTitle">Cash Prize</div>
-                <div className="cashPrizeInfo">Cash prize up to 1.2 lakh .</div>
+                <div className="cashPrizeInfo">Cash prize up to 2 lakh .</div>
               </div>
               <div className="cashPrize" data-aos="zoom-in" data-aos-delay="200">
                 <div className="cashPrizeTitle">

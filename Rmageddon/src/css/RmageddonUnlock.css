@@ -158,6 +158,31 @@ body{
   padding-left: 10px;
 }
 
+.unlockTextContentButtons .cashPrize {
+  transition: transform 0.3s ease;
+}
+
+.unlockTextContentButtons .cashPrize:hover {
+  transform: scale(1.1);
+}
+
+.unlockTextContentButtons .cashPrize:hover .cashPrizeTitle {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.unlockTextContentButtons .cashPrize:hover .cashPrizeInfo {
+  transform: scale(1.5);
+  transition: transform 0.3s ease;
+  margin-bottom: 10%;
+  background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,215,0,1) 75%);
+  font-weight: 900;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+
 @media (max-width: 900px) {
   .rmageddonUnlock {
     width: 100vw;

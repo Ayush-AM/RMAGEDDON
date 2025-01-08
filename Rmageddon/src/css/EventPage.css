@@ -174,7 +174,11 @@
 .card-buttons .btn:hover,
 .card-buttons-2 .btn-2:hover {
   transform: scale(1.1);
+  box-shadow: 0 0 10px 5px #ffd700; 
+  border: 1px solid #ffd700; 
 }
+
+
 
 .overlay-image {
   width: 100%;
