@@ -8,7 +8,7 @@
   const events = [
     {
       id: 1,
-      title: "Robo War",
+      title: "RoboWars",
       description: "Battle it out with robots in an epic showdown.",
       eventImage: "https://res.cloudinary.com/dupeml4xm/image/upload/v1736308451/robowar_uofjth.webp",
       transformerImage: "https://res.cloudinary.com/dupeml4xm/image/upload/v1736308113/event_optimus_dr9xl5.png",
@@ -17,7 +17,7 @@
     },
     {
       id: 2,
-      title: "Robo Race",
+      title: "Path of Primes",
       description: "Race your robots to victory.",
       eventImage: "https://res.cloudinary.com/dupeml4xm/image/upload/v1736308462/Roborace_nwwrci.jpg",
       transformerImage: "https://res.cloudinary.com/dupeml4xm/image/upload/v1736308122/event_bumblebee_rrb3ue.png",
@@ -26,7 +26,7 @@
     },
     {
       id: 3,
-      title: "Line of Sight",
+      title: "Aerotron",
       description: "Test your drone navigation skills.",
       eventImage: "https://res.cloudinary.com/dupeml4xm/image/upload/v1736308484/drone_alt6dy.jpg",
       transformerImage: "https://res.cloudinary.com/dupeml4xm/image/upload/v1736308105/event_drift_n57frh.png",
@@ -35,7 +35,7 @@
     },
     {
       id: 4,
-      title: "Line Follower",
+      title: "Traceformer",
       description: "Program robots to follow a designated path.",
       eventImage: "https://res.cloudinary.com/dupeml4xm/image/upload/v1736308471/LineFollower_davy5p.webp",
       transformerImage: "https://res.cloudinary.com/dupeml4xm/image/upload/v1736308134/event_crosshair_lyvacu.png",
@@ -44,7 +44,7 @@
     },
     {
       id: 5,
-      title: "Robo Soccer",
+      title: "Optimus Striker",
       description: "Score goals with your robotic teammates.",
       eventImage: "https://res.cloudinary.com/dupeml4xm/image/upload/v1736308522/soccer_hjsgpv.png",
       transformerImage: "https://res.cloudinary.com/dupeml4xm/image/upload/v1736308240/event_transformer_twn32n.png",

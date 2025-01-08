@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import "../css/Contact.css";
 import NavBar from "./NavBar";
 import Footer from "./Footer";
-import Coordinator2 from "../images/Roborace.jpg";
+import Coordinator2 from "../images/Shantanu P.jpg";
 import Coordinator3 from "../images/drone.jpg";
 import Coordinator4 from "../images/LineFollower.webp";
 import Coordinator5 from "../images/soccer.jpg";
