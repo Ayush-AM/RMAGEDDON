@@ -14,7 +14,7 @@ const DateTimeInfo = ({className}) => {
         <div className="dateGamesText">5</div>
       </div>
       <div className="dateInfo">
-        <div className="dateDays">Days</div>
+        <div className="dateDays">Dates</div>
         <div className="dateMonth">21,22,23 Feb 2025</div>
       </div>
       <div className="dateInfo">
