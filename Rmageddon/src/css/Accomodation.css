@@ -1,0 +1,31 @@
+.Accommodation{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 3vw;
+    flex-direction: column;
+}
+
+.AccommodationNavbar{
+    width: 100%;
+    height: 10%;
+    display: flex;  
+    align-items: center;
+    
+}
+
+.Accommodation h1{
+    color: #fde914;
+    height: 90%;
+    width: 100%;;
+}
+
+@media screen and (max-width: 900px) {
+    .AccommodationNavbar{
+        justify-content: space-between;
+    }
+    
+}

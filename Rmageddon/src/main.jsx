@@ -5,6 +5,7 @@ import 'remixicon/fonts/remixicon.css';
 import EventPage from './jsx/EventPage';
 import Contact from './jsx/Contact';
 import Loader from './jsx/Loader';
+import Accommodation from './jsx/Accommodation';
 import { useState, useEffect, useRef } from 'react';
 import {
   createBrowserRouter,
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
   {
     path: "/event",
     element: <EventPage />,
+  },
+  {
+    path: "/accomodation",
+    element: <Accommodation />,
   },
   {
     path: "/contact",
