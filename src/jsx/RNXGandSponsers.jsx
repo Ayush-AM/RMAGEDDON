@@ -61,7 +61,8 @@ const RNXGandSponsers = ({ className }) => {
             Our Sponsors
           </div>
           <div className="HorizontalSlider" data-aos="fade-up">
-            <HorizontalSlider className="HorizontalSlider" />
+            {/* <HorizontalSlider className="HorizontalSlider" /> */}
+            Sponsors will be displayed soon!
           </div>
         </div>
       </div>

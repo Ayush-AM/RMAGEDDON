@@ -3,7 +3,6 @@
   src: url("../font/Faster Stroker.otf");
 }
 
-
 .rnxgAndSponsers {
   width: 100vw;
   height: 100vh;
@@ -38,7 +37,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  
 }
 .sponsers img {
   width: 50%;
@@ -86,7 +84,12 @@
   height: 85%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: top;
+  margin-top: 10%;
+  font-size: 4vw;
+  /* background-color: red; */
+  color: hsla(0, 0%, 100%, 0.644);
+  font-weight: 800;
 }
 .rnxgandSponserCards {
   width: 50vw;
@@ -141,7 +144,6 @@
 .sponsorImgLargeHexagon {
   width: 50%;
   height: 40%;
-  background-color: aliceblue;
 }
 .sponsorNameLargeHexagon {
   width: 50%;
@@ -315,6 +317,13 @@
   .sponsorDescription {
     font-size: 3vw;
   }
+  .HorizontalSlider {
+    align-items: center;
+    /* padding-top: 30% ; */
+    font-size: 10vw;
+    text-align: center;
+    /* background-color: red; */
+  }
 }
 @media (min-width: 481px) and (max-width: 600px) {
   .rnxgAndSponsers {
@@ -337,6 +346,7 @@
   .rnxgandSponserSponserTitle {
     font-size: 6vw;
     height: 15%;
+    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -391,6 +401,13 @@
   .sponsorDescription {
     font-size: 2vw;
     width: 90%;
+  }
+  .HorizontalSlider {
+    align-items: center;
+    /* padding-top: 30% ; */
+    font-size: 10vw;
+    text-align: center;
+    /* background-color: red; */
   }
 }
 @media (min-width: 601px) and (max-width: 900px) {
@@ -462,6 +479,13 @@
     font-size: 2vw;
     width: 90%;
   }
+  .HorizontalSlider{
+    align-items: center;
+  /* padding-top: 30% ; */
+  font-size: 8.5vw;
+  text-align: center;
+  /* background-color: red; */
+}
 }
 @media (min-width: 900px) and (orientation: portrait) {
   .rnxgAndSponsers {
@@ -474,20 +498,20 @@
   .oragnisers {
     display: none;
   }
-  .sponsers{
+  .sponsers {
     display: none;
   }
   .rnxgandSponserOrganiserInfo {
     display: none;
   }
- .rnxgandSponserSponserInfo{
-  width: 100%;
-  height: 100%;
- }
+  .rnxgandSponserSponserInfo {
+    width: 100%;
+    height: 100%;
+  }
   .rnxgandSponserSponserTitle {
     font-size: 8vw;
   }
-  .HorizontalSlider{
+  .HorizontalSlider {
     width: 100%;
     height: 90%;
   }
