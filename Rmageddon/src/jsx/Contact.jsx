@@ -3,9 +3,9 @@ import "../css/Contact.css";
 import NavBar from "./NavBar";
 import Footer from "./Footer";
 import Coordinator2 from "../images/Shantanu P.jpg";
-import Coordinator3 from "../images/drone.jpg";
-import Coordinator4 from "../images/LineFollower.webp";
-import Coordinator5 from "../images/soccer.jpg";
+import Coordinator3 from "../images/ContactUs.png";
+import Coordinator4 from "../images/ContactUs.png";
+import Coordinator5 from "../images/ContactUs.png";
 
 import AOS from "aos";
 import "aos/dist/aos.css";

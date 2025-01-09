@@ -12,8 +12,10 @@
 .AccommodationNavbar{
     width: 100%;
     height: 10%;
-    display: flex;  
+    display: flex;
     align-items: center;
+    padding: 10px 20px;
+    background-color: #222831;
     
 }
 
