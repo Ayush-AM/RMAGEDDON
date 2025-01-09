@@ -44,24 +44,42 @@
 .navMenu {
   color: white;
   display: none;
-  z-index: 2;
+  z-index: 1;
 }
 .navMenuOpen {
   width: 80vw;
-  height: 100vh;
+  height: calc(100vh - var(--nav-bar-height, 0px)); /* Use custom property for navBar height */
   display: flex;
   flex-direction: column;
-  justify-content: top;
+  justify-content: flex-start;
   align-items: center;
   gap: 10vh;
   position: absolute;
   background-color: hwb(0 0% 100% / 0.9);
   color: white;
-  z-index: 1;
-  top: 5%;
+  z-index: 2;
+  top: var(--nav-bar-height, 0px); /* Dynamically set top based on navBar height */
   right: 0;
   animation: positionChanging 1s ease;
 }
+
+.navLink,
+.navMenuLink {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navLink:hover,
+.navMenuLink:hover {
+  color: gray;
+}
+
+.activeLink {
+  color: yellow; /* Highlight the active link with a different color */
+  font-weight: bold; /* Optionally make it bold */
+}
+
 
 @keyframes positionChanging {
   0% {
@@ -84,13 +102,19 @@
   transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition for scaling and color */
 }
 
+
 .navLinks a:hover, 
 .navMenuOpen a:hover {
   transform: scale(1.1); 
   color: #fde914; /* Change color to yellow */
 }
 @media (max-width: 900px) {
-
+  .navMenu{
+    /* width: 80%; */
+    display: flex;
+    justify-content: right;
+    /* background-color: red; */
+  }
   
   .container {
     width: fit-content;
@@ -166,7 +190,7 @@
   }
   .navMenu {
     display: flex;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
     color: white;
     font-size: 8vw;
@@ -190,6 +214,7 @@
     padding-right: 2vw;
     color: white;
     font-size: 5vw;
+    justify-content: right;
   }
   .navRnxgLogo img {
     width: 60%;

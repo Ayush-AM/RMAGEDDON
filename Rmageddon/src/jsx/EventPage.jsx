@@ -134,6 +134,12 @@
         </div>
         <Footer/>
       </div>
+  //     <div className='Accommodation2'>
+  //     <div className='AccomodationNavBar2'>
+  //         <NavBar className="AccomodationNavBar2" />
+  //     </div>
+  //   <h1>Coming Soon....</h1>
+  // </div>
     );
   };
 

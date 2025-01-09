@@ -10,18 +10,14 @@
   height: 10%;
   display: flex;
   align-items: center;
-  padding: 10px 20px;
-  background-color: #222831;
 }
 
-.event_page_title{
-
+.event_page_title {
   color: #ffd700;
   text-align: center;
   font-size: 3.5vw;
   font-family: myFirstFont;
   letter-spacing: 5px;
-
 }
 
 .eventPageNavBar a:hover {
@@ -31,10 +27,10 @@
 ::-webkit-scrollbar {
   display: none;
 }
+
 .event_page {
   width: 100vw;
   height: 190vh;
-  /* background-color: aqua; */
 }
 
 .page1 {
@@ -43,12 +39,12 @@
   background-image: url("https://res.cloudinary.com/dupeml4xm/image/upload/v1736306259/event_group_utg7y9.png");
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  /* background-color: red; */
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
+
 .page2 {
   width: 100%;
   height: 100vh;
@@ -71,7 +67,6 @@
 }
 
 .card-2 {
-  /* position: relative; */
   background-color: white;
   color: white;
   background: url("https://res.cloudinary.com/dupeml4xm/image/upload/v1736306385/events_card_dsmfkb.png") no-repeat center center/cover;
@@ -83,6 +78,7 @@
   justify-content: space-around;
   z-index: 2;
 }
+
 .card {
   width: 55%;
   height: 40%;
@@ -98,7 +94,6 @@
 .card-content {
   width: 90%;
   height: 80%;
-  /* background-color: red; */
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -116,6 +111,7 @@
   font-size: 2vw;
   color: #ffd700;
 }
+
 .card-content-2 h2 {
   font-size: 2vw;
   color: #ffd700;
@@ -124,10 +120,10 @@
 .card-content p {
   width: 90%;
   display: flex;
-
   color: white;
   font-size: 1vw;
 }
+
 .card-content-2 p {
   font-size: 1vw;
   margin-left: 4%;
@@ -153,6 +149,7 @@
   padding: 1vh;
   border-radius: 5px;
 }
+
 .card-buttons-2 {
   display: flex;
   justify-content: center;
@@ -160,6 +157,7 @@
   align-items: center;
   margin-top: 1rem;
 }
+
 .card-buttons-2 .btn-2 {
   background-color: #fff;
   color: black;
@@ -174,11 +172,9 @@
 .card-buttons .btn:hover,
 .card-buttons-2 .btn-2:hover {
   transform: scale(1.1);
-  box-shadow: 0 0 10px 5px #ffd700; 
-  border: 1px solid #ffd700; 
+  box-shadow: 0 0 10px 5px #ffd700;
+  border: 1px solid #ffd700;
 }
-
-
 
 .overlay-image {
   width: 100%;
@@ -186,8 +182,6 @@
   display: flex;
   align-items: last baseline;
   justify-content: center;
-  /* background-color: #222831; */
-  /* overflow: hidden; */
   position: relative;
   z-index: 0;
 }
@@ -200,7 +194,6 @@
 .overlay-event-image {
   width: 10%;
   height: 10%;
-  /* background-color: red; */
   transition: all 0.5s ease;
 }
 
@@ -229,10 +222,6 @@
   opacity: 1;
 }
 
-.overlay-image:hover .overlay-event-image {
-  transform: scale(1.1);
-}
-
 .overlay-image img:first-child {
   position: absolute;
   z-index: 1;
@@ -240,7 +229,6 @@
   height: auto;
 }
 
-/* Second image styles */
 .overlay-image img:last-child {
   position: absolute;
   z-index: 2;
@@ -254,7 +242,6 @@
   height: auto;
 }
 
-/* Parent container for the second set of images */
 .overlay-image-2 {
   position: relative;
   width: 90%;
@@ -265,10 +252,8 @@
   margin: 0 auto;
 }
 
-/* First image of the second set */
 .overlay-image-2 img:first-child {
   position: absolute;
-
   z-index: 1;
   width: 100%;
   height: auto;
@@ -276,40 +261,24 @@
 
 .overlay-image-2 img:last-child {
   position: absolute;
-
   z-index: 2;
   width: 100%;
   height: auto;
 }
 
 .overlay-event-image-2:hover {
-  transform: translateY(20px); /* Moves the image down */
-  opacity: 0; /* Fades the image out */
-}
-
-.overlay-image-transformer:hover {
-  transform: scale(1.1);
-  z-index: 3;
+  transform: translateY(20px);
+  opacity: 0;
 }
 
 .overlay-image-2:hover .overlay-image-transformer,
 .overlay-image-2:hover .overlay-event-image-2 {
-  transform: scale(1.1); /* Scale up both images */
-}
-
-.overlay-image-transformer {
-  transition: transform 1s ease, opacity 1s ease;
-  opacity: 0;
-  transform: translateY(20px);
+  transform: scale(1.1);
 }
 
 .overlay-image-2:hover .overlay-image-transformer {
-  transform: translateY(0); /* Move it back to its normal position on hover */
-  opacity: 1; /* Fade it in */
-}
-
-.overlay-image-2:hover .overlay-event-image-2 {
-  transform: scale(1.1); /* Scale up the event image */
+  transform: translateY(0);
+  opacity: 1;
 }
 
 .cards-container-2 {
@@ -322,7 +291,6 @@
 }
 
 .card-wrapper {
-  /* position: relative; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -336,43 +304,41 @@
 .page2 {
   overflow: hidden;
 }
+
 @media (max-width: 900px) {
-  .page1{
+  .page1 {
     background-size: auto 100%;
     background-position: center;
   }
   .page2 {
-    height: 300vh; 
+    height: 300vh;
   }
-  .event_page{
+  .event_page {
     height: 410vh;
   }
   .cards-container-2 {
-    height: 100%; 
+    height: 100%;
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
   }
- .card-wrapper{
-  width: 90%;
-  height: 24%;
- }
- .eventPageNavBar{
-  justify-content: space-between;
- }
- 
+  .card-wrapper {
+    width: 90%;
+    height: 24%;
+  }
+  .eventPageNavBar {
+    justify-content: space-between;
+  }
 }
 
-
 @media (min-width: 701px) and (max-width: 900px) {
-  .event_page_title{
+  .event_page_title {
     font-size: 7vw;
   }
-  .page2{
+  .page2 {
     background-image: none;
   }
-
   .roboWarCards {
     width: 70%;
   }
@@ -391,28 +357,27 @@
   .card-buttons .btn {
     font-size: 1.5vw;
   }
-  .overlay-image-2{
-    width: 35%
+  .overlay-image-2 {
+    width: 35%;
   }
-  .card-2{
+  .card-2 {
     width: 40%;
     justify-content: space-around;
-
   }
-  .card-2 h2{
+  .card-2 h2 {
     font-size: 4vw;
   }
-  .card-2 p{
+  .card-2 p {
     font-size: 1.5vw;
   }
-  .card-buttons-2 .btn-2{
+  .card-buttons-2 .btn-2 {
     font-size: 1.5vw;
     padding: 1vw;
   }
 }
 
 @media (min-width: 601px) and (max-width: 700px) {
-  .event_page_title{
+  .event_page_title {
     font-size: 8vw;
   }
   .roboWarCards {
@@ -435,38 +400,35 @@
   .card-buttons .btn {
     font-size: 1.9vw;
   }
-  .overlay-image-2{
-    width: 40%
+  .overlay-image-2 {
+    width: 40%;
   }
-  .card-2{
+  .card-2 {
     width: 45%;
     justify-content: space-around;
   }
-  .card-2 h2{
+  .card-2 h2 {
     font-size: 4vw;
   }
-  .card-2 p{
+  .card-2 p {
     font-size: 1.9vw;
   }
-  .card-buttons-2 .btn-2{
+  .card-buttons-2 .btn-2 {
     font-size: 1.8vw;
     padding: 1vw;
   }
-  
 }
 
 @media (min-width: 481px) and (max-width: 600px) {
-  .event_page_title{
+  .event_page_title {
     font-size: 10vw;
   }
   .roboWarCards {
     width: 80%;
   }
-
-  .page2{
-        background-image: none;
+  .page2 {
+    background-image: none;
   }
-
   .card {
     width: 80%;
   }
@@ -475,18 +437,15 @@
     z-index: 0;
   }
   .overlay-image img:first-child {
-    /* position: absolute; */
     z-index: 0;
     width: 50%;
     height: auto;
   }
   .overlay-image img:last-child {
-    /* position: absolute; */
     z-index: 0;
     width: 70%;
     height: auto;
   }
-
   .card-content h2 {
     font-size: 5vw;
   }
@@ -499,45 +458,41 @@
   .card-buttons .btn {
     font-size: 3vw;
   }
-  .overlay-image-2{
-    width: 55%
+  .overlay-image-2 {
+    width: 55%;
   }
-  .card-2{
+  .card-2 {
     width: 60%;
     justify-content: space-around;
   }
-  .card-2 h2{
+  .card-2 h2 {
     font-size: 5vw;
   }
-  .card-2 p{
+  .card-2 p {
     font-size: 2vw;
   }
-  .card-buttons-2 .btn-2{
+  .card-buttons-2 .btn-2 {
     font-size: 2vw;
     padding: 1.3vw;
   }
 }
 
 @media (max-width: 480px) {
-  .event_page_title{
+  .event_page_title {
     font-size: 10vw;
   }
   .roboWarCards {
     width: 90%;
   }
-  .page2{ 
+  .page2 {
     background-image: none;
-
   }
   .card {
     width: 90%;
   }
   .overlay-image {
     width: 100%;
-    /* pointer-events: none; */
     z-index: 0;
-    /* height: 100%; */
-    /* background-color: red; */
   }
   .overlay-image img:first-child {
     position: absolute;
@@ -564,30 +519,30 @@
   .card-buttons .btn {
     font-size: 4vw;
   }
-  .overlay-image-2{
-    width: 80%
+  .overlay-image-2 {
+    width: 80%;
   }
-  .card-2{
+  .card-2 {
     width: 80%;
     justify-content: space-around;
   }
-  .card-2 h2{
+  .card-2 h2 {
     font-size: 6.5vw;
   }
-  .card-2 p{
+  .card-2 p {
     font-size: 3vw;
   }
-  .card-buttons-2 .btn-2{
+  .card-buttons-2 .btn-2 {
     font-size: 4.5vw;
     padding: 2vw;
   }
 }
-@media (min-width:900px) and (orientation:portrait) {
-  .page1{
+
+@media (min-width: 900px) and (orientation: portrait) {
+  .page1 {
     background-size: auto 100%;
     background-position: center;
   }
- 
   .roboWarCards {
     width: 70%;
   }
@@ -606,35 +561,70 @@
   .card-buttons .btn {
     font-size: 2vw;
   }
-  .overlay-event-image-2{
+  .overlay-event-image-2 {
     flex-wrap: wrap;
   }
-  .cards-container-2{
+  .cards-container-2 {
     width: 100%;
     height: 100%;
   }
-  .card-wrapper{
+  .card-wrapper {
     width: 50%;
     height: 40%;
     justify-content: space-around;
   }
-  .overlay-image-2{
-    width: 70%
+  .overlay-image-2 {
+    width: 70%;
   }
-  .card-2{
+  .card-2 {
     width: 80%;
     height: 60%;
     justify-content: space-between;
     align-items: center;
   }
-  .card-2 h2{
+  .card-2 h2 {
     font-size: 4vw;
   }
-  .card-2 p{
+  .card-2 p {
     font-size: 1.5vw;
   }
-  .card-buttons-2 .btn-2{
+  .card-buttons-2 .btn-2 {
     font-size: 2vw;
     padding: 2vw;
   }
 }
+
+/* .Accommodation2{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 3vw;
+  flex-direction: column;
+}
+
+.AccomodationNavBar2{
+  width: 100%;
+  height: 10%;
+  display: flex;
+  align-items: center; 
+  
+}
+
+.Accommodation2 h1{
+  color: #fde914;
+  height: 90%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 900px) {
+  .AccomodationNavBar2{
+      justify-content: space-between;
+  }
+  
+} */

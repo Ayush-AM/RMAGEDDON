@@ -1,15 +1,19 @@
 import React from 'react'
 import "../css/Accomodation.css"
 import NavBar from './NavBar'
+import Footer from './Footer'
 
 const Accommodation = () => {
   return (
+    <>
     <div className='Accommodation'>
-        <div className='AccommodationNavbar'>
-            <NavBar className="AccommodationNavBar" />
+        <div className='AccomodationNavBar'>
+            <NavBar className="AccomodationNavBar" />
         </div>
-      <h1>Coming Soon....</h1>
+      <h1 className='h1class'>Coming Soon....</h1>
     </div>
+    <Footer />
+    </>
   )
 }
 

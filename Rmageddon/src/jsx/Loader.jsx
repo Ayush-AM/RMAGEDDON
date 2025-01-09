@@ -1,27 +1,40 @@
 import React, { useState, useEffect } from 'react';
 import '../css/Loader.css'; 
+import audioSong from "../images/audioSong.mp3";
+
 const Loader = () => {
   const [gifSrc, setGifSrc] = useState("");
-  const [isShrinking, setIsShrinking] = useState(false); // State to trigger shrinking
-  const [isVisible, setIsVisible] = useState(true); // State to control visibility
+  const [isVisible, setIsVisible] = useState(true);
 
   useEffect(() => {
-    // Add a unique query parameter to force the browser to reload the GIF
+    // Set the GIF source
     setGifSrc(`${"https://res.cloudinary.com/dupeml4xm/image/upload/v1736308777/rmageddon_sjvdd3.gif"}?t=${new Date().getTime()}`);
 
-    // After the GIF finishes playing, trigger shrinking
-    const shrinkTimer = setTimeout(() => setIsShrinking(true), 3000); // Adjust timing to match GIF duration
-    const hideTimer = setTimeout(() => setIsVisible(false), 4000); // Add 1 sec delay for shrinking
+    // Play audio using AudioContext
+    const playAudio = async () => {
+      try {
+        const audio = new Audio(audioSong);
+        const audioContext = new (window.AudioContext || window.webkitAudioContext)();
+        const track = audioContext.createMediaElementSource(audio);
+        track.connect(audioContext.destination);
 
-    return () => {
-      clearTimeout(shrinkTimer);
-      clearTimeout(hideTimer);
+        await audio.play();
+        console.log("Audio is playing!");
+      } catch (error) {
+        console.error("Error playing audio:", error);
+      }
     };
-  }, []); // Run only when the component is mounted
+
+    playAudio();
+
+    // Hide loader after 4 seconds
+    const hideTimer = setTimeout(() => setIsVisible(false), 4000);
+    return () => clearTimeout(hideTimer);
+  }, []);
 
   return (
     isVisible && (
-      <div className={`loadercontainer `}>
+      <div className="loadercontainer">
         <div className="loader">
           <img src={gifSrc} alt="Loading..." className="rmageddonLogo" />
         </div>

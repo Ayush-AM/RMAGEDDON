@@ -18,7 +18,7 @@
 }
 @keyframes backgroundChangeRes {
   from {
-    background-position: 200% 0%, 150% 100%; 
+    background-position: -800% 0%, 150% 100%; 
   }
   to {
     background-position: 0% 0%, 100% 100%;

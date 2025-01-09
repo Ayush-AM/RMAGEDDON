@@ -42,11 +42,7 @@ const NavBar = ({ className }) => {
         ref={navbarResize}
         data-aos="fade-down"
         data-aos-delay="800"
-        style={{
-          background: menuClickedorNot
-            ? "linear-gradient(to right, transparent 5%, hsla(0, 0%, 0%, 0.9) 80%)"
-            : "transparent",
-        }}
+        
       >
         <div className="navRnxgLogo">
           <a href="https://www.rnxg.co.in/" target="_blank">
@@ -67,8 +63,12 @@ const NavBar = ({ className }) => {
             Contact Us
           </NavLink>
         </div>
-        <div className="navMenu" onClick={handleMenuClick}>
-          <div className={`toggle ${menuClickedorNot ? "active" : ""}`}>
+        <div className="navMenu" onClick={handleMenuClick} style={{
+          background: menuClickedorNot
+            ? "hwb(0 0% 100% / 0.9)"
+            : "transparent",
+        }}>
+          <div className={`toggle ${menuClickedorNot ? "active" : ""}`} >
             <span></span>
             <span></span>
             <span></span>
