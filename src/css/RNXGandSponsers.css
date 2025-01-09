@@ -1,0 +1,494 @@
+@font-face {
+  font-family: myFirstFont;
+  src: url("../font/Faster Stroker.otf");
+}
+
+
+.rnxgAndSponsers {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("https://res.cloudinary.com/dupeml4xm/image/upload/v1736305042/maskTrans_a5smbj.png");
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+  background-position: center;
+  background-color: hsla(0, 0%, 0%, 0.899);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.oragnisers {
+  width: 10%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.oragnisers img {
+  width: 50%;
+  height: 90%;
+  border-right: 1px solid white;
+  padding-right: 10px;
+}
+.sponsers {
+  width: 10%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.sponsers img {
+  width: 50%;
+  height: 90%;
+  border-left: 1px solid white;
+  padding-left: 10px;
+}
+.rnxgandSponsersInfo {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.rnxgandSponserOrganiserInfo {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2vw;
+}
+.rnxgandSponserSponserInfo {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  justify-content: left;
+  align-items: baseline;
+  flex-direction: column;
+  color: white;
+}
+.rnxgandSponserSponserTitle {
+  color: #fde914;
+  font-size: 3.1vw;
+  height: 15%;
+  width: 100%;
+  display: flex;
+  align-items: first baseline;
+  justify-content: left;
+  font-family: myFirstFont;
+}
+.HorizontalSlider {
+  width: 100%;
+  height: 85%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rnxgandSponserCards {
+  width: 50vw;
+  height: 50%;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: z-index 0.3s ease;
+}
+.smallHexagon {
+  position: absolute;
+  width: 15vw;
+  height: 100%;
+  background-color: #1b1b1b;
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  z-index: 0;
+  transition: z-index 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5vw;
+  color: #fde914;
+}
+.largeHexagon {
+  position: absolute;
+  width: 30vw;
+  height: 100%;
+  background-color: black;
+  clip-path: polygon(
+    12.5% 0%,
+    87.5% 0%,
+    100% 50%,
+    87.5% 100%,
+    12.5% 100%,
+    0% 50%
+  );
+  z-index: -1;
+  display: none;
+  transition: z-index 0.3s ease;
+}
+.rightsidecontent {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fde914;
+  font-size: 1vw;
+}
+.sponsorImgLargeHexagon {
+  width: 50%;
+  height: 40%;
+  background-color: aliceblue;
+}
+.sponsorNameLargeHexagon {
+  width: 50%;
+  text-align: center;
+}
+.leftsidecontent {
+  display: flex;
+  align-items: left;
+  flex-direction: column;
+  gap: 1vw;
+}
+.sponsorDescription {
+  width: 80%;
+  font-size: 1vw;
+}
+.sponsorExplore {
+  font-size: 1.3vw;
+  width: fit-content;
+  padding: 0.5vw 1vw;
+  border: 3px solid #fde914;
+}
+.sponsorExplore a {
+  text-decoration: none;
+  color: #fde914;
+}
+.rnxgandSponserCards:hover {
+  z-index: 10; /* Bring the card to the top of all */
+}
+.rnxgandSponserCards:hover .smallHexagon {
+  z-index: -1;
+}
+.rnxgandSponserCards:hover .largeHexagon {
+  display: flex;
+  z-index: 10;
+  justify-content: space-between;
+  align-items: center;
+}
+.rnxgandSponserSponserCardsContainer .rnxgandSponserCards:nth-child(even) {
+  transform: translateY(50%); /* Adjusted translateY for better alignment */
+}
+
+.rnxgandSponserSponserCardsContainer .rnxgandSponserCards:nth-child(odd) {
+  transform: translateY(0%); /* Opposite direction for even cards */
+}
+.rnxgandSponserSponserCardsContainer
+  .rnxgandSponserCards:last-child
+  .largeHexagon {
+  transform: translateX(-50%);
+}
+
+@media (max-width: 900px) {
+  .oragnisers {
+    display: none;
+    width: 0%;
+  }
+  .rnxgAndSponsers {
+    width: 100%;
+    height: 50vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .rnxgandSponsersInfo {
+    /* background-color: orange; */
+    width: 100%;
+  }
+  .rnxgandSponserOrganiserInfo {
+    display: none;
+  }
+  .rnxgandSponserSponserInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    /* background-color: red; */
+  }
+  .rnxgAndSponsers {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .HorizontalSlider {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: last baseline;
+    /* background-color: #fde914; */
+    margin: 0;
+    padding: 0;
+  }
+  .sponsers {
+    width: 0%;
+    display: none;
+  }
+  .sponsers img {
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  .rnxgAndSponsers {
+    background-image: url("../images/maskTrans2.png");
+    background-size: cover;
+  }
+  .rnxgandSponserSponserInfo {
+    height: 100%;
+  }
+  .rnxgandSponserSponserTitle {
+    height: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .sponsers {
+    width: 21%;
+  }
+  .sponsers img {
+    width: 100%;
+    height: 80%;
+  }
+  .rnxgandSponserSponserTitle {
+    font-size: 7.5vw;
+  }
+  .rnxgandSponserSponserCardsContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+  .smallHexagon {
+    display: none;
+  }
+  .rnxgandSponserCards {
+    width: 100%;
+    height: 18%;
+  }
+  .largeHexagon {
+    width: 100%;
+    height: 100%;
+    display: flex;
+  }
+  .rnxgandSponserSponserCardsContainer .rnxgandSponserCards:nth-child(even) {
+    transform: translateY(0%); /* Adjusted translateY for better alignment */
+  }
+
+  .rnxgandSponserSponserCardsContainer .rnxgandSponserCards:nth-child(odd) {
+    transform: translateY(0%); /* Opposite direction for even cards */
+  }
+  .rnxgandSponserSponserCardsContainer
+    .rnxgandSponserCards:last-child
+    .largeHexagon {
+    transform: translateX(0%);
+  }
+  .rightsidecontent {
+    width: 50%;
+    font-size: 3vw;
+  }
+  .leftsidecontent {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .sponsorExplore {
+    font-size: 3vw;
+  }
+  .sponsorDescription {
+    font-size: 3vw;
+  }
+}
+@media (min-width: 481px) and (max-width: 600px) {
+  .rnxgAndSponsers {
+    background-size: auto 100vh;
+  }
+  .sponsers {
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+  .sponsers img {
+    width: 100%;
+  }
+  .rnxgandSponserSponserInfo {
+    width: 100%;
+    height: 100%;
+  }
+  .rnxgandSponserSponserTitle {
+    font-size: 6vw;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .rnxgandSponserSponserCardsContainer {
+    width: 100%;
+    height: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .rnxgandSponserCards {
+    width: 50%;
+    height: 30%;
+  }
+  .smallHexagon {
+    display: none;
+  }
+  .largeHexagon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .rnxgandSponserSponserCardsContainer .rnxgandSponserCards:nth-child(even) {
+    transform: translateY(0%); /* Adjusted translateY for better alignment */
+  }
+
+  .rnxgandSponserSponserCardsContainer .rnxgandSponserCards:nth-child(odd) {
+    transform: translateY(0%); /* Opposite direction for even cards */
+  }
+  .rnxgandSponserSponserCardsContainer
+    .rnxgandSponserCards:last-child
+    .largeHexagon {
+    transform: translateX(0%);
+  }
+  .rightsidecontent {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vw;
+  }
+  .leftsidecontent {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+  .sponsorDescription {
+    font-size: 2vw;
+    width: 90%;
+  }
+}
+@media (min-width: 601px) and (max-width: 900px) {
+  .rnxgAndSponsers {
+    background-size: auto 90vh;
+  }
+
+  .rnxgandSponserSponserInfo {
+    width: 100%;
+    height: 100%;
+  }
+  .rnxgandSponserSponserTitle {
+    font-size: 5.2vw;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .rnxgandSponserSponserCardsContainer {
+    width: 100%;
+    height: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .rnxgandSponserCards {
+    width: 50%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .smallHexagon {
+    display: none;
+  }
+  .largeHexagon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .rnxgandSponserSponserCardsContainer .rnxgandSponserCards:nth-child(even) {
+    transform: translateY(0%); /* Adjusted translateY for better alignment */
+  }
+
+  .rnxgandSponserSponserCardsContainer .rnxgandSponserCards:nth-child(odd) {
+    transform: translateY(0%); /* Opposite direction for even cards */
+  }
+  .rnxgandSponserSponserCardsContainer
+    .rnxgandSponserCards:last-child
+    .largeHexagon {
+    transform: translateX(0%);
+  }
+  .rightsidecontent {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vw;
+  }
+  .leftsidecontent {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+  .sponsorDescription {
+    font-size: 2vw;
+    width: 90%;
+  }
+}
+@media (min-width: 900px) and (orientation: portrait) {
+  .rnxgAndSponsers {
+    height: 50vh;
+    background-size: auto 50vh;
+  }
+  .rnxgAndSponsers {
+    padding-top: 2vw;
+  }
+  .oragnisers {
+    display: none;
+  }
+  .sponsers{
+    display: none;
+  }
+  .rnxgandSponserOrganiserInfo {
+    display: none;
+  }
+ .rnxgandSponserSponserInfo{
+  width: 100%;
+  height: 100%;
+ }
+  .rnxgandSponserSponserTitle {
+    font-size: 8vw;
+  }
+  .HorizontalSlider{
+    width: 100%;
+    height: 90%;
+  }
+}

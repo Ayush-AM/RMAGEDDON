@@ -1,0 +1,30 @@
+.Accommodation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.AccomodationNavBar {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;    
+    z-index: 2;
+}
+.h1class{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center  ;
+}
+.Accommodation h1{
+color: #fde914;
+font-size: 4vw;
+
+}
+
