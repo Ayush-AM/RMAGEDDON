@@ -192,6 +192,7 @@
     text-align: center;
     text-align: center;
   }
+  
 }
 
 @media (min-width: 901px) and (orientation: portrait) {
@@ -227,4 +228,5 @@
    font-size: 3vw;
     width: 30%;
   }
+  
 }

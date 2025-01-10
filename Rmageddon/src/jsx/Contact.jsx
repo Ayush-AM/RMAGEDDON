@@ -1,7 +1,6 @@
 import React, { useEffect ,useState} from "react";
 import "../css/Contact.css";
 import NavBar from "./NavBar";
-import Footer from "./Footer";
 import Coordinator2 from "../images/Shantanu P.jpg";
 import Coordinator3 from "../images/ContactUs.png";
 import Coordinator4 from "../images/ContactUs.png";

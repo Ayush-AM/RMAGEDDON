@@ -1,0 +1,86 @@
+@font-face {
+  font-family: myFirstFont;
+  src: url("../font/Faster Stroke.otf");
+}
+
+.Accommodation {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5vw;
+  flex-direction: column;
+  background-image: url("../images/comingsoonDesk.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.AccomodationNavBar {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  /* z-index: 2; */
+  /* margin-top: 0.5vw; */
+  /* background-color: black; */
+}
+.AccomodationNavBar .navMenuOpen {
+  margin-top: 7vh;
+}
+
+.Accommodation h1 {
+  color: #fde914;
+  height: 90%;
+  width: 100%;
+  display: flex;
+  justify-content: top;
+  align-items: top;
+  margin-top: 15%;
+  margin-left: 10%;
+  font-family: myFirstFont;
+  letter-spacing: 2px;
+}
+
+@media screen and (max-width: 900px) {
+  .AccomodationNavBar {
+    justify-content: space-between;
+  }
+}
+@media (min-width: 481px) and (max-width: 600px) {
+  .Accommodation {
+    background-image: url("../images/cominSoonTab.png");
+    background-size: 100% 100%;
+    font-size: 5vw;
+    justify-content: left;
+    align-items: start;
+    width: 100vw;
+    height: 100vh;
+  }
+  .Accommodation h1{
+    width: 90vw;
+    height: 90vh;
+   justify-content: left;
+   position: absolute;
+   top: 3%;
+   left: 0%;
+   /* background-color: red; */
+  }
+  .AccomodationNavBar .navMenuOpen {
+    margin-top: 8vh;
+  }
+}
+@media (max-width: 480px) {
+  .Accommodation {
+    background-image: url("../images/comingsoonres.png");
+  }
+  .Accommodation {
+    font-size: 5vw;
+    justify-content: center;
+  }
+  .Accommodation h1 {
+    justify-content: center;
+  }
+}

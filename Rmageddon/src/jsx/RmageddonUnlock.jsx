@@ -55,7 +55,7 @@ const RmageddonUnlock = ({ className }) => {
       </div>
       <div className="rmageddonUnlockImages">
         <div className="rmageddonBumblebee">
-          <img src={"https://res.cloudinary.com/dupeml4xm/image/upload/v1736305645/bumblebee_j2iltw.png"} alt=""  data-aos="fade-left"  data-aos-delay="800"/>
+          <img src={"https://res.cloudinary.com/dupeml4xm/image/upload/v1736305645/bumblebee_j2iltw.png"} alt=""  data-aos="fade-left"  data-aos-delay="600"/>
         </div>
         <div className="rmageddonUnlockRmageddon">
        <img src={"https://res.cloudinary.com/dupeml4xm/image/upload/v1736305852/rmageddon_eaiy7g.png"} alt="" />
