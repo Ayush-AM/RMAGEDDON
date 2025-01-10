@@ -26,13 +26,13 @@ const RNXG = ({ className }) => {
       </div>
       <div className="rnxgContent">
         <div className="rnxgTitle" data-aos="fade-right">RNXG</div>
-        <div className="rnxgInfo" data-aos="zoom-out" data-aos-delay="400">
+        <div className="rnxgInfo" data-aos="zoom-out" data-aos-delay="200">
           Members of the RNXG, regardless of their fields, collaborate as a team
           to generate multidisciplinary technical expertise. Robotics for Next
           Generation, or RNXG, is the greatest platform for working on various
           issue statements and developing the best solutions for them.
         </div>
-        <div className="rnxgExplore" data-aos="zoom-out" data-aos-delay="400">
+        <div className="rnxgExplore" data-aos="zoom-out" data-aos-delay="200">
           <a href="https://www.rnxg.co.in/" target="blank" onClick={handlePlaySound}>Explore</a>
         </div>
       </div>
