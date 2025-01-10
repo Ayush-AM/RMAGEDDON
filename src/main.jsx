@@ -19,7 +19,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/event",
-    element: <Accommodation />,
+    element: <EventPage />,
   },
   {
     path: "/accomodation",
@@ -47,8 +47,7 @@ function App() {
   }, []);
 
   return (
-    <StrictMode>
-      <RouterProvider router={router} />
+    <StrictMode><RouterProvider router={router} />
     </StrictMode>
   );
 }

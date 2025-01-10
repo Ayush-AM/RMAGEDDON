@@ -33,7 +33,7 @@ const RNXG = ({ className }) => {
           issue statements and developing the best solutions for them.
         </div>
         <div className="rnxgExplore" data-aos="zoom-out" data-aos-delay="400">
-          <a href="/" onClick={handlePlaySound}>Explore</a>
+          <a href="https://www.rnxg.co.in/" target="blank" onClick={handlePlaySound}>Explore</a>
         </div>
       </div>
     </div>

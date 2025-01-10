@@ -152,7 +152,7 @@ p {
   transform: scale(2.2);
   color: #ffd700;
   background: -webkit-linear-gradient(45deg, #ffd700, #f7bc0c);
-  -webkit-background-clip: text;
+  /* -webkit-background-clip: text; */
   -webkit-text-fill-color: transparent;
   transition: all 265ms ease-in;
 }

@@ -46,13 +46,21 @@
 
 .rnxgExplore a:hover {
   cursor: pointer;
-  scale: 1.1;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  transform: scale(1.1);
+  transition: transform 0.4s ease;
+  margin-bottom: 4%;
+  margin-top: 2%;
+  background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,215,0,1) 75%);
+  font-weight: 900;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .rnxgExplore a{
   color: white;
   text-decoration: none;
+  
 }
 
 @media (max-width: 480px) {
