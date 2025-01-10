@@ -88,7 +88,7 @@ const Footer = ({ className }) => {
             <p className="footer-copyright">Design and Develop by Team RnXg</p>
           </div>
           <div className="belowlinerightside">
-            <a href="https://mail.google.com/mail/u/0/?fs=1&to=info@rmageddon.tech&tf=cm">
+            <a href="https://mail.google.com/mail/u/0/?fs=1&to=info@rmageddon.tech&tf=cm" target="_blank">
               info@rmageddon.tech
             </a>
           </div>
