@@ -184,6 +184,13 @@
   
   
 }
+@media (min-width:481px) and (max-width:900px) {
+  .navMenu{
+    width: 80%;
+    margin-top: 0;
+  }
+
+}
 @media (max-width: 600px) {
   .navLinks {
     display: none;

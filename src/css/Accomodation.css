@@ -23,8 +23,9 @@
   height: 10%;
   display: flex;
   align-items: center;
-  z-index: 2;
-  margin-top: 0.5vw;
+  /* z-index: 2; */
+  /* margin-top: 0.5vw; */
+  /* background-color: black; */
 }
 .AccomodationNavBar .navMenuOpen {
   margin-top: 7vh;

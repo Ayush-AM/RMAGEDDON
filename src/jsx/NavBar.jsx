@@ -42,7 +42,11 @@ const NavBar = ({ className }) => {
         ref={navbarResize}
         data-aos="fade-down"
         data-aos-delay="800"
-        
+        style={{
+          background: menuClickedorNot
+            ? "black"
+            : "transparent",
+        }}
       >
         <div className="navRnxgLogo">
           <a href="https://www.rnxg.co.in/" target="_blank">
@@ -65,7 +69,7 @@ const NavBar = ({ className }) => {
         </div>
         <div className="navMenu" onClick={handleMenuClick} style={{
           background: menuClickedorNot
-            ? "hwb(0 0% 100% / 0.9)"
+            ? "black"
             : "transparent",
         }}>
           <div className={`toggle ${menuClickedorNot ? "active" : ""}`} >

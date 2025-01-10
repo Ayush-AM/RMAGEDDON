@@ -156,9 +156,7 @@ const Contact = ({ className }) => {
           </div>
         </div>
       </div>
-      <div className="Footer">
-      <Footer />
-      </div>
+   
     </div>
   );
 };

@@ -2,6 +2,7 @@ import React from 'react'
 import "../css/Accomodation.css"
 import NavBar from './NavBar'
 import Footer from './Footer'
+import Loader from './Loader'
 
 const Accommodation = () => {
   return (

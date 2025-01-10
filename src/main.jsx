@@ -48,7 +48,7 @@ function App() {
 
   return (
     <StrictMode>
-      {loading ? <Loader /> : <RouterProvider router={router} />}
+      <RouterProvider router={router} />
     </StrictMode>
   );
 }
