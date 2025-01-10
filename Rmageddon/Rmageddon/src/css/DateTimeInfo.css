@@ -1,0 +1,65 @@
+@font-face {
+  font-family: myFirstFont;
+  src: url("../font/Faster Stroker.otf");
+}
+
+
+.dateInfo{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.3vw;
+    margin-right: 5%;
+}
+.dateInfo a{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    /* font-size: 2vw; */
+    color: yellow   ;
+    text-decoration: none;
+    font-family: myFirstFont;
+
+}
+
+.dateInfo .dateDays{
+  color: #fde914;
+  /* font-size: 2vw; */
+  font-family: myFirstFont;
+}
+
+.dateInfo .dateGamesQuantity{
+  color: #fde914;
+  /* font-size: 2vw; */
+  font-family: myFirstFont;
+}
+
+@media (min-width:900px)and (orientation: portrait){
+  .dateInfo{
+    font-size: 2vw;
+  }
+  .dateInfo a{
+    font-size: 2vw;
+  }
+  .dateLocation{
+    font-size: 2vw;
+  }
+    
+}
+
+@media (max-width:900px){
+  .dateInfo{
+    font-size: 2.9vw;
+    margin-left: 5%;
+  }
+
+  .dateLocation{
+    font-size: 2.5vw;
+  }
+}
+@media (max-width:350px){
+  .dateInfo{
+    font-size: 4vw;
+    margin-left: 5%;
+  }
+}

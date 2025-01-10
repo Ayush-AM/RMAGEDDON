@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect ,useState} from "react";
 import "../css/Contact.css";
 import NavBar from "./NavBar";
 import Footer from "./Footer";
@@ -9,6 +9,7 @@ import Coordinator5 from "../images/ContactUs.png";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Loader from "./Loader";
 
 const Contact = ({ className }) => {
   useEffect(() => {
@@ -17,6 +18,25 @@ const Contact = ({ className }) => {
       once: true,
     });
   }, []);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+
+    // Simulate a loading period
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 4000); // 4 seconds
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (loading) {
+    return <Loader />;
+  }
   return (
     <div>
       <NavBar className={"contactNavbar"} />
@@ -156,9 +176,7 @@ const Contact = ({ className }) => {
           </div>
         </div>
       </div>
-      <div className="Footer">
-      <Footer />
-      </div>
+   
     </div>
   );
 };
